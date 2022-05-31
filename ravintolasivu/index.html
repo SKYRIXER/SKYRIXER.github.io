@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<link rel="text/css" href="style.css">
+<head>
+<title>GRID-harjoitus</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="item1"><h1>Ravintola Lapintaika</h1></div>
+        <div class="item2"><h3>Aukioloajat</h3><margin><p>ma - pe, 10:30 - 15:00</p></margin></div>
+        <div class="item3"><h1><strong>Ruokalista</strong></h1>
+            <h2>Maanantai</h2>
+            <p>Juusto-vihanneskeittoa ja kokin sämpylä. Paistettua lohta, sinappikastiketta, tilliperunoita ja kasviksia. Marjakiisseliä ja hunajakermavaahtoa. (sisältää ruokajuoman - vesi, kotikalja, maito)</p>
+            <br>
+            <h2>Tiistai</h2>
+            <p>Kana-fetajustosalaattia ja kokin sämpylä. Paistettua punakampelaa, pinaattikastiketta ja perunamuusia. Pannukakkua, mansikkahilloa ja kermavaahtoa. (sisältää ruokajuoman - vesi, kotikalja, maito)</p>
+            <br>
+            <h2>Keskiviikko</h2>
+            <p>Tomaatti-yrttikeittoa ja kokin sämpylä. Kalkkunaleikettä, BBQ-kastiketta, riisiä ja kasviksia. Omenapiirakkaa ja vaniljakastiketta. (sisältää ruokajuoman - vesi, kotikalja, maito)</p>
+            <br>
+            <h2>Torstai</h2>
+            <p>Rapukeittoa ja kokin sämpylä. Poronkäristystä, perunamuusia, puolukkahilloa ja suolakurkkuja. Hedelmäsalaattia ja kinuskikastiketta. (sisältää ruokajuoman - vesi, kotikalja, maito)</p>
+            <br>
+            <h2>Perjantai</h2>
+            <p>Savulohisalaatti ja kokin sämpylä. Naudan paahtopaistia, punaviinikastiketta, kermaperunat ja kasviksia. Suklaamousse. (sisältää ruokajuoman - vesi, kotikalja, maito)</p></div>  
+        <div class="item4"><h2>Palautelomake</h2>
+        <table>
+            <tr>
+                <td><p><strong>Päivämäärä kun kävit ravintolassa</strong></p></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><p><strong>Sukupuoli</strong></p></td>
+                <td><input type="radio" name="gender" value="man"><strong>Mies</strong>
+                <input type="radio" name="gender" value="female"><strong>Nainen</strong></td>
+            </tr>
+            <tr>
+                <td><p><strong>Etunimi</strong></p></td>
+                <td><input type="text" name="firstname" value="" maxlength=30></td>
+            </tr>
+            <tr>
+                <td><p><strong>Ikä</strong></p></td>
+                <td><input type="number" name="age"></td>
+            </tr>
+        </table>
+            <br><textarea name="message" rows="5" cols="30">Tähän voi kirjoittaa palautetta ravintolalle.</textarea><br>
+            <input type="submit" value="Lähetä">
+    <br></div>
+        <div class="item5"><h2><strong>Yhteystiedot</strong></h2>
+            <address>Ravintola Lapintaika, Ravintolakatu 2, 98765 LAPINMAA<br>Puh. (012) 345 6789<br>Sähköposti: varaukset@jokuposti.net</address></div>
+        <div class="item6">Lounaan hinta on 11€</div>
+    </div>
+    
+</body>
+
+</html>
