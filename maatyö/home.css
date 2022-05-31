@@ -1,0 +1,29 @@
+
+
+td, th, p {
+    color: red;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main {
+    display: flex;
+}
+#basicinfo, #topten, #data {
+    width: 33%;
+    height: auto;
+    background-color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#headerr {
+    background-color: red;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+
