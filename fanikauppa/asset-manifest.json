@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/fanikauppa/static/css/main.e04c8582.css",
+    "main.js": "/fanikauppa/static/js/main.15c0870c.js",
+    "static/js/787.608f0871.chunk.js": "/fanikauppa/static/js/787.608f0871.chunk.js",
+    "static/media/Amethyst.jpg": "/fanikauppa/static/media/Amethyst.a516427dbac3120d7262.jpg",
+    "static/media/Sapphire.jpg": "/fanikauppa/static/media/Sapphire.d17b604338414267a102.jpg",
+    "static/media/Emerald.jpg": "/fanikauppa/static/media/Emerald.9979af7467ab5edca71d.jpg",
+    "static/media/Diamond.jpg": "/fanikauppa/static/media/Diamond.8d269546b33d7309cf26.jpg",
+    "static/media/Topaz.jpg": "/fanikauppa/static/media/Topaz.db03143a2f9f1e1d8dd3.jpg",
+    "static/media/Ruby.jpg": "/fanikauppa/static/media/Ruby.528e809b5a159a4f6155.jpg",
+    "index.html": "/fanikauppa/index.html",
+    "main.e04c8582.css.map": "/fanikauppa/static/css/main.e04c8582.css.map",
+    "main.15c0870c.js.map": "/fanikauppa/static/js/main.15c0870c.js.map",
+    "787.608f0871.chunk.js.map": "/fanikauppa/static/js/787.608f0871.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e04c8582.css",
+    "static/js/main.15c0870c.js"
+  ]
+}
