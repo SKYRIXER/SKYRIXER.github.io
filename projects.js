@@ -7,8 +7,8 @@ const projects = [
     image: "./imgs/unityTD.png"
   },
   {
-    title: "Kennel Haikuron (Next.js)",
-    description: "Kennelin ammattimainen verkkosivusto rakennettu Next.js:llä. Sisältää koirakannan esittelyn, yhteystiedot ja varausten hallintajärjestelmän.",
+    title: "Haikuron.fi",
+    description: "Responsiivinen ja käyttövalmis verkkosivusto kennelin brändille ja palveluille. Toteutettu Next.js:llä ja Tailwind CSS:llä.",
     link: "https://haikuron.fi",
     year: 2025,
     image: "./imgs/kennel.jpg"
