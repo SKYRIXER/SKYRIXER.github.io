@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#121110">
+  <meta name="description" content="Veeti Jokirannan web-, elektroniikka-, palvelin- ja peliprojektit.">
+  <title>Projektit | Veeti Jokiranta</title>
+  <link rel="canonical" href="https://skyrixer.github.io/projektit.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body id="alku">
+  <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">VJ</span> Veeti Jokiranta</a>
+      <nav class="main-nav" aria-label="Päävalikko">
+        <a href="./">Etusivu</a>
+        <a href="projektit.html" aria-current="page">Projektit</a>
+        <a href="./#yhteys">Yhteys</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap projects-page" id="sisalto" tabindex="-1">
+    <header class="projects-header">
+      <h1>Projektit<span>.</span></h1>
+      <nav class="category-nav" aria-label="Projektikategoriat">
+        <a href="#ohjelmistot">Web-kehitys <span aria-hidden="true">↓</span></a>
+        <a href="#laitteet">Elektroniikka <span aria-hidden="true">↓</span></a>
+        <a href="#palvelimet">Palvelimet <span aria-hidden="true">↓</span></a>
+        <a href="#pelit">Pelit <span aria-hidden="true">↓</span></a>
+      </nav>
+    </header>
+
+    <section class="category" id="ohjelmistot" aria-labelledby="ohjelmistot-otsikko">
+      <h2 id="ohjelmistot-otsikko">Web-sovellukset ja sivustot</h2>
+      <div class="project-grid">
+        <article class="card card-photo">
+            <img class="kennel-photo" src="imgs/kennel.jpg" alt="" loading="lazy" decoding="async">
+            <div class="card-body">
+              <div class="card-kicker">Verkkosivusto · 2025</div>
+              <h3>Haikuron.fi</h3>
+              <p>Rakensin kennelille responsiivisen verkkosivuston, jolla kävijä voi tutustua kenneliin, sen koiriin ja palveluihin.</p>
+              <p class="stack">Next.js · Tailwind CSS</p>
+              <div class="card-links">
+                <a class="text-link" href="https://haikuron.fi/">Avaa sivusto <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/SKYRIXER/Haikuron.fi" aria-label="Haikuron.fi GitHubissa">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+        <article class="card card-wage">
+            <div class="card-body">
+              <div class="card-kicker">HAMKin ryhmäprojekti</div>
+              <h3>WageWise</h3>
+              <p>Rakensimme verkkosovelluksen palkan laskemiseen. Sovelluksessa on kirjautuminen, käyttäjäroolit ja käyttäjähallinta. Blazor-käyttöliittymä käyttää .NET-rajapintaa, ja käyttäjätiedot tallennetaan MongoDB:hen.</p>
+              <p class="stack">C# · Blazor · .NET 8 · MongoDB</p>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section class="category" id="laitteet" aria-labelledby="laitteet-otsikko">
+      <h2 id="laitteet-otsikko">Elektroniikka ja laiteohjelmointi</h2>
+      <div class="project-grid">
+        <article class="card" id="eliran">
+            <div class="card-body">
+              <div class="card-kicker">HAMKin ryhmäprojekti</div>
+              <h3>ElIran · henkilölaskuri</h3>
+              <p>Raspberry Pi 5 laskee kamerakuvasta, montako ihmistä tilassa on. Next.js-näkymässä voi seurata henkilömäärää ja säätää rajaa, jonka mukaan Pi Zeron merkkivalot vaihtuvat. Testasin kolmen LEDin kytkennän ja korjasin sen johdotusvirheen.</p>
+              <p class="stack">Raspberry Pi · Hailo · MQTT · Node.js · Next.js</p>
+            </div>
+          </article>
+
+        <article class="card">
+            <div class="card-body">
+              <div class="card-kicker">Toimiva koekytkentä</div>
+              <h3>Pico WH -kiertonuppiohjain</h3>
+              <p>Rakensin Pico WH:lla ohjaimen, jossa kiertonupilla selataan OLED-näytön valikkoa. Testasin samassa kytkennässä nupin painalluksen, neljä painiketta sekä RGB-ledin väri- ja kirkkaussäädön.</p>
+              <p class="stack">Pico WH · MicroPython · I²C · OLED</p>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section class="category" id="palvelimet" aria-labelledby="palvelimet-otsikko">
+      <h2 id="palvelimet-otsikko">Palvelimet ja ylläpito</h2>
+      <div class="project-grid">
+        <article class="card card-single">
+            <div class="card-body">
+              <div class="card-kicker">Kotipalvelin käytössä</div>
+              <h3>Raspberry Pi 5 -kotipalvelin</h3>
+              <p>Pystytin Pi 5:lle Docker-palvelimen ja otin käyttöön Tailscale-etäyhteyden. Pi-hole suodattaa DNS-kyselyitä. Uptime Kuma ja Beszel seuraavat palveluiden saatavuutta ja koneen resurssien käyttöä.</p>
+              <p class="stack">Linux · Docker · Tailscale · Pi-hole</p>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section class="category" id="pelit" aria-labelledby="pelit-otsikko">
+      <h2 id="pelit-otsikko">Pelit</h2>
+      <div class="project-grid">
+        <article class="card game-card">
+          <img src="imgs/unityTD.png" alt="Kuvakaappaus Block Tower Defensestä" loading="lazy" decoding="async">
+          <div class="card-body">
+            <div class="card-kicker">Unity-peli · 2024</div>
+            <h3>Block Tower Defense</h3>
+            <p>Ensimmäinen kokonainen peliprojektini. Toteutin tornipuolustuspelin pelilogiikan ja käyttöliittymän sekä julkaisin pelattavan version Unity Playssa.</p>
+            <p class="stack">Unity · C#</p>
+            <div class="card-links">
+              <a class="text-link" href="https://play.unity.com/mg/other/builds-u4-6">Pelaa Unity Playssa <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <small>© 2026 Veeti Jokiranta</small>
+      <a href="#alku">Takaisin ylös <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
