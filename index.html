@@ -4,28 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Veeti Jokiranta | Portfolio</title>
-  <meta name="description" content="Veeti Jokirannan tiivis portfolio: projektit, tausta ja yhteystiedot.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Veeti Jokirannan portfolio. Web-kehitystä, Raspberry Pi -projekteja ja elektroniikan koekytkentöjä.">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <header class="hero">
     <div class="container hero-content">
       <div>
-        <span class="badge">Portfolio</span>
-        <h1>Veeti Jokiranta - Web-kehittäjä</h1>
-        <p class="tagline">Rakennan responsiivisia ja käyttökelpoisia web-ratkaisuja käyttäjäkeskeisellä otteella. Erityisosaamistani ovat modernit frontend-teknologiat (Next.js, React, JavaScript) ja REST-integraatiot.</p>
+        <h1>Veeti Jokiranta</h1>
+        <p class="tagline">Kehitän verkkosovelluksia ja rakennan Raspberry Pi -projekteja, joissa koodi ohjaa fyysisiä laitteita.</p>
         <a class="cta" href="#projektit">Katso projektit</a>
       </div>
       <div>
         <div class="about-grid">
           <div>
-            <h2>Tietoa</h2>
-            <p>Opiskelen tieto- ja viestintätekniikan insinööriksi, pääpaino web-kehityksessä ja frontend-teknologioissa. Olen kehittänyt useita käyttövalmiita verkkosivuprojekteja, joissa olen vastannut sekä käyttöliittymästä että teknisestä toteutuksesta.</p>
+            <h2>Minusta</h2>
+            <p>Opiskelen tieto- ja viestintätekniikan insinööriksi HAMKissa. Teen web-käyttöliittymiä ja rajapintoja. Laiteprojekteissa kokoan ja testaan kytkentöjä koekytkentälevyllä sekä yhdistän niitä ohjelmistoihin GPIO:n ja MQTT:n avulla.</p>
           </div>
           <ul>
-            <li>📍<strong>Sijainti:</strong> Riihimäki / Kangasala</li>
-            <li>🛠 <strong>Teknologiat:</strong> HTML, CSS, JavaScript, React, Next.js</li>
-            <li>🎯<strong>Kiinnostusalueet:</strong> web-kehitys, käyttöliittymät ja frontend-integraatiot</li>
+            <li><strong>Sijainti</strong> · Riihimäki / Kangasala</li>
+            <li><strong>Web</strong> · JavaScript, React, Next.js, C#, Blazor</li>
+            <li><strong>Laitteet</strong> · Raspberry Pi, GPIO, MQTT, Docker</li>
           </ul>
         </div>
       </div>
@@ -36,15 +35,26 @@
     <section id="projektit" class="section">
       <div class="container">
         <h2>Projektit</h2>
-        <p class="lead">Alla on esimerkkejä toteuttamistani web-projekteista.</p>
-        <div id="projects-container" class="cards"></div>
+        <section class="project-group" aria-labelledby="laitteet">
+          <h3 id="laitteet">Elektroniikka ja Raspberry Pi</h3>
+          <div class="cards-grid" data-project-group="laitteet"></div>
+        </section>
+        <section class="project-group" aria-labelledby="ohjelmistot">
+          <h3 id="ohjelmistot">Ohjelmistot ja pelit</h3>
+          <div class="cards-grid" data-project-group="ohjelmistot"></div>
+        </section>
+        <section class="project-group" aria-labelledby="suunnitelmat">
+          <h3 id="suunnitelmat">Suunnitteilla</h3>
+          <div class="cards-grid" data-project-group="suunnitelmat"></div>
+        </section>
+        <noscript><p>Projektikortit tarvitsevat JavaScriptin. Julkiset repot löydät <a href="https://github.com/SKYRIXER">GitHubista</a>.</p></noscript>
       </div>
     </section>
 
     <section id="yhteys" class="section">
       <div class="container">
-        <h2>Kontaktit</h2>
-        <p class="lead">Ota yhteyttä sähköpostilla tai seuraa some-kanavista.</p>
+        <h2>Yhteystiedot</h2>
+        <p class="lead">Minut tavoittaa sähköpostilla ja LinkedInissä.</p>
         <div class="contact-links">
           <a href="mailto:veeti.jokiranta@gmail.com">veeti.jokiranta@gmail.com</a>
           <a href="https://www.linkedin.com/in/veeti-jokiranta/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -59,6 +69,6 @@
       <p>&copy; 2026 Veeti Jokiranta</p>
     </div>
   </footer>
-  <script src="projects.js"></script>
+  <script src="projects.js?v=2"></script>
 </body>
 </html>
